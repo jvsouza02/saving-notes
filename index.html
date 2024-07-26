@@ -19,7 +19,7 @@
             <p>Você já teve aquela sensação de que uma ideia incrível estava prestes a escapar da sua mente? Ou talvez
                 tenha escrito algo tão profundo que precisava ser preservado para sempre. Bem, é aí que o SavingNotes
                 entra em cena.</p>
-            <button>Comece agora!</button>
+            <a href="#form_adicionar_notas">Comece agora!</a>
         </section>
     </header>
 
@@ -59,11 +59,11 @@
                     <h2>Faça a sua anotação!</h2>
                     <div class="inputs">
                         <label for="titulo">Título</label>
-                        <input type="text" name="titulo" id="titulo">
+                        <input type="text" name="titulo" id="titulo" class="campo">
                     </div>
                     <div class="inputs">
                         <label for="anotacao">Anotação</label>
-                        <textarea name="anotacao" id="anotacao" placeholder="Digite a sua anotação aqui" rows="10" cols="30"></textarea>
+                        <textarea name="anotacao" id="anotacao" placeholder="Digite a sua anotação aqui" rows="10" cols="30" class="campo"></textarea>
                     </div>
                     <div>
                         <button id="btn_limpar" class="btn">Limpar</button>
@@ -72,8 +72,10 @@
                 </div>
             </div>
             <div id="notas_salvas">
-                <h3>Notas Salvas</h3>
-                <div id="notas"></div>
+                <h2>Notas Salvas</h3>
+                <div id="notas">
+
+                </div>
             </div>
         </div>
     </main>
