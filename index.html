@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>SavingNotes</h1>
+    </nav>
+
+    <header>
+        <section id="slogan">
+            <h2>Guarde Suas Ideias, Compartilhe Seus Pensamentos!</h2>
+            <p>Você já teve aquela sensação de que uma ideia incrível estava prestes a escapar da sua mente? Ou talvez
+                tenha escrito algo tão profundo que precisava ser preservado para sempre. Bem, é aí que o SavingNotes
+                entra em cena.</p>
+            <button>Comece agora!</button>
+        </section>
+    </header>
+
+    <section class="divs_sections">
+        <div class="sobre-imagem">
+            <div id="sobre">
+                <h2>O que é o SavingNotes?</h2>
+                <div id="sobre-qualidades">
+                    <p>O SavingNotes é mais do que apenas um aplicativo de notas. É um refúgio digital para suas
+                        palavras, pensamentos e inspirações. Aqui estão alguns motivos pelos quais você vai adorar:</p>
+                    <ol>
+                        <li>Organização Simples: Crie quantas notas quiser e organize-as em categorias personalizadas.
+                            Seja para listas de tarefas, rascunhos de histórias ou reflexões profundas, o SavingNotes
+                            mantém tudo organizado.</li>
+                        <li>Acesso em Qualquer Lugar: Esqueça aquela sensação de “onde anotei isso mesmo?”. Com o
+                            SavingNotes, suas notas estão sempre ao alcance, seja no seu smartphone, tablet ou
+                            computador.</li>
+                        <li>Compartilhamento Fácil: Às vezes, uma ideia merece ser compartilhada. Compartilhe suas notas
+                            com amigos, colegas ou familiares com apenas alguns cliques.</li>
+                        <li>Design Minimalista: Nada de distrações. O SavingNotes foca no essencial: suas palavras. A
+                            interface limpa e intuitiva permite que você se concentre no que realmente importa.</li>
+                    </ol>
+                </div>
+                <p>Experimente o SavingNotes Hoje Mesmo! Não deixe suas palavras se perderem no vazio. O SavingNotes
+                    está aqui para preservá-las, celebrá-las e torná-las eternas!</p>
+            </div>
+            <figure>
+                <img src="img/sobre_image.jpg" alt="">
+            </figure>
+        </div>
+    </section>
+
+    <main class="divs_sections">
+        <div class="div-imagem">
+            <div id="form_adicionar_notas">
+                <div id="form-campos">
+                    <h2>Faça a sua anotação!</h2>
+                    <div class="inputs">
+                        <label for="titulo">Título</label>
+                        <input type="text" name="titulo" id="titulo">
+                    </div>
+                    <div class="inputs">
+                        <label for="anotacao">Anotação</label>
+                        <textarea name="anotacao" id="anotacao" placeholder="Digite a sua anotação aqui" rows="10" cols="30"></textarea>
+                    </div>
+                    <div>
+                        <button id="btn_limpar" class="btn">Limpar</button>
+                        <button id="btn_salvar" class="btn">Salvar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="notas_salvas">
+                <h3>Notas Salvas</h3>
+                <div id="notas"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© All Copyright deserved to their respective owners</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arimo", sans-serif;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #36454F;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+nav h1 {
+    position: absolute;
+    left: 60px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/anotando.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 670px;
+    height: 250px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #36454F;
+    justify-content: space-between;
+    color: white;
+    box-shadow: 0px 0px 24px 3px rgb(54, 69, 79, 0.4);
+}
+
+
+#slogan p{
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 1cm;
+}
+
+#slogan button {
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(237, 146, 56);
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#slogan button:hover {
+    box-shadow: 0px 0px 16px 0px rgb(237, 146, 56);
+    color: white;
+}
+
+.divs_sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    background-color: rgb(240, 248, 255, 0.4);
+}
+
+.divs_sections h2 {
+    font-size: 28px;
+}
+
+.sobre-imagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 248, 255);
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: auto;
+    padding: 50px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+#sobre p:first-child {
+    font-weight: bold;
+}
+
+#sobre ol {
+    margin: 20px;
+}
+
+#sobre li {
+    margin: 10px 0px;
+    
+}
+
+figure {
+    width: 50%;
+    height: 100%;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0px rgb(54, 69, 79, 0.2);
+}
+
+.div-imagem {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+}
+
+#form_adicionar_notas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    background-image: url(img/form_imagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0px rgb(54, 69, 79, 0.2);
+}
+
+#form-campos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 430px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 12px 3px rgb(0, 0, 0, 0.4);
+    color: white;
+
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+#form-campos input {
+    width: inherit;
+    height: 33px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    padding-left: 5px;
+}
+
+#form-campos textarea {
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    resize: none;
+    padding-left: 5px;
+}
+
+.btn {
+    margin-top: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+    height: 33px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px 0px;
+}
+
+.btn:hover {
+    width: 120px;
+    height: 38px;
+}
+
+#btn_salvar:hover {
+    background-color: rgb(24, 143, 24);
+    box-shadow: 0px 0px 24px 1px rgba(82, 215, 82, 0.5);
+    color: white;
+}
+
+#btn_limpar:hover {
+    background-color: grey;
+    box-shadow: 0px 0px 24px 1px rgb(164, 164, 164);
+    color: white;
+}
+
+#notas_salvas {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #36454F;
+    margin-top: 40px;
+    color: white;
+}
+
+@media (max-width: 1366px) {
+    #sobre {
+        font-size: 14px;
+    }   
+}
+
+@media (max-width: 600px) {
+    figure {
+        display: none;
+    }
+
+    #sobre {
+        width: 100%;
+    }
+}
