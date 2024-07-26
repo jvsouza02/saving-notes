@@ -1,5 +1,7 @@
 let notas = [];
 
+const div_notas = document.getElementById("notas");
+
 // Classe "Nota" para instanciar cada nota que o usuário salvar //
 class Nota {
     constructor(titulo, anotacao) {
@@ -12,7 +14,6 @@ class Nota {
     }
 
     mostrarNotas() {
-        const div_notas = document.getElementById("notas");
         div_notas.innerHTML = "";
         notas.map(nota => {
             const div_nota = document.createElement("div");
@@ -34,15 +35,21 @@ class Nota {
     }
 
     deletarNota(nota) {
-
+        verificaNotas();
     }
 
     deletarTodasNotas() {
-
+        verificaNotas();
     }
 }
 
 // Funções do Sistema //
+function verificaNotas() {
+    if (!div_notas.hasChildNodes) {
+        div_notas.innerHTML = "<h3>Nenhuma anotação encontrada.</h3>";
+    }
+}
+
 function retornaCampos() {
     return [...document.querySelectorAll(".campo")];
 }
